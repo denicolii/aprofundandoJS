@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Calcular</title>
+</head>
+<body>
+Digite um numero: <input type="text" id="num1"> 
+<br>
+Digite outro numero: <input type="text" id="num2">
+
+<button id="calcule" >Calcular</button>
+
+<p></p>
+
+<script>
+
+    let numero1 = document.querySelector("#num1")
+    let numero2 = document.querySelector("#num2")
+    const button = document.querySelector('#calcule')
+
+    const result = document.querySelector("p")
+
+    button.addEventListener('click', function() {
+        const resultado = parseFloat(numero1.value) + parseFloat(numero2.value)
+        result.textContent = resultado 
+    })
+   
+
+
+
+</script>
+</body>
+</html>
